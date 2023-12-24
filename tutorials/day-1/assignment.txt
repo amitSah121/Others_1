@@ -1,0 +1,19 @@
+A)Make button using 
+    1) margin and padding ( make all possible buttons)
+    2) add hoverable effect to different butons like , 
+        a) some buttons can have text color change on hover
+        b) some buttons can have background color change on hover
+        c) some buttons can have border color change on hover
+    3) use borders-bars (w3-bottombar .... ) to make stylized buttons
+    4) make borders rounded as well given how it looks cool
+B) Use containers, spans and paragraphs to make a contact list that includes
+    1) photo
+    2) name
+    3) number
+    4) email id
+    5) emojies if possible
+C) make a book preface ( https://i1.rgstatic.net/publication/327754606_Preface/links/5ba2827492851ca9ed15cd55/largepreview.png )
+     follow the link and you will find the image  
+D) note: use div, p, i, b, span, and img tags
+
+And smile you are learning something
