@@ -3,12 +3,29 @@
   <head>
     <title>Base</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="../w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../w3.js"></script>
   </head>
   <body>
-    <div class="w3-btn w3-blue" onclick="w3.toggleShow('p')">Hello</div>
-    <p class="w3-padding w3-red">I am togglable</p>
+    <div class="w3-sidebar w3-card" id="sidebar">
+      <span class="w3-padding w3-hover-red" onclick="w3.hide('#sidebar')">Close</span>
+    </div>
+    <div class="w3-teal w3-padding w3-hide-small">
+      <span class="w3-large w3-padding">W3 CSS</span>
+      <div class="w3-container w3-right">
+        <div class="w3-bar">
+          <span class="w3-padding">Home</span>
+          <span class="w3-padding">Contacts</span>
+          <span class="w3-padding">Address</span>
+          <span class="w3-padding">Documentation</span>
+          <span class="w3-padding w3-text-blue">Login</span>
+          <span class="w3-padding w3-border w3-border-blue">Signup</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
