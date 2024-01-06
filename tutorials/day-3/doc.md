@@ -3,6 +3,9 @@
 ## Contents
 ```mermaid
 graph LR;
+
+    Javascript-->html_events;
+
     w3_js-->Intro;
     w3_js-->w3_selectors;
     w3_js-->Add_Remove_or_Toggle_Class;
@@ -11,6 +14,11 @@ graph LR;
     
     material_design-->intro;
 ```
+
+## html selectors
+- onclick
+- onfocus
+- onscroll
 
 ## w3 selectors
 
@@ -60,3 +68,7 @@ w3.removeClass(selector,'class') | removes a class selected element
 w3.removeClass(selector,'class1 class2 class3...') | removes multiple class selected element 
 w3.toggleClass(selector,'class') | toggles adding or removing of a class selected element
 w3.toggleClass(selector,'class1 class2 class3...') | toggles adding or removing of multiple class selected element 
+
+
+## Material Design
+[Follow the link](https://m2.material.io/design/environment/surfaces.html#material-environment)
