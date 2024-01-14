@@ -8,6 +8,77 @@
     <script src="../w3.js"></script>
   </head>
   <body>
-    
+    <div class="w3-">
+      <div class="w3-container w3-pale-green w3-card">
+        <span class="w3-large w3-padding-24 w3-show-inline-block"><b>W3CSS</b></span>
+        <div class="w3-container w3-right  w3-hide-small">
+          <ul class="w3-bar">
+            <li class="w3-bar-item">Home</li>
+            <li class="w3-bar-item">Contacts</li>
+            <li class="w3-bar-item">Address</li>
+            <li class="w3-bar-item">Documentation</li>
+            <li class="w3-bar-item w3-text-blue">Login</li>
+            <li class="w3-bar-item w3-blue">Signup</li>
+          </ul>
+        </div>
+        <div class="w3-container w3-right w3-hide-medium w3-hide-large">
+          <ul class="w3-bar"  style="padding-inline-start: 0px;">
+            <li class="w3-bar-item"><i class="fa fa-home"></i></li>
+            <li class="w3-bar-item"><i class="fa fa-id-badge"></i></li>
+            <li class="w3-bar-item"><i class="fa fa-address-book"></i></li>
+            <li class="w3-bar-item"><i class="fa fa-book"></i></li>
+            <li class="w3-bar-item w3-text-blue"><i class="fa fa-sign-in"></i></li>
+            <li class="w3-bar-item w3-border w3-border-blue"><i class="fa fa-arrow-up"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w3-sidebar w3-border w3-card w3-animate-left" id="sidebar">
+        <div class="w3-container">
+          <div class="w3-bar-block">
+            <span class="w3-bar-item w3-red w3-center" onclick="w3.hide('#sidebar')">CLOSE <i class="fa fa-times w3-margin-left"></i></span>
+            <span class="w3-bar-item w3-hover-blue">w3-home</span>
+            <span class="w3-bar-item w3-grey">w3-intro</span>
+            <span class="w3-bar-item w3-hover-blue">w3-colors</span>
+            <span class="w3-bar-item w3-hover-blue">w3-containers</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-content w3-container" style="max-width: 900px;">
+        <p class="w3-button" onclick="w3.show('#sidebar')"><i class="fa fa-bars"></i></p>
+        <h1>W3 CSS Introduction</h1>
+        <h3>W3 CSS Colors</h3>
+        <p>The <a href="https://www.w3schools.com/w3css/w3css_colors.asp"><b>w3-color</b></a> class is the most important of the W3.CSS classes. It provides equality like:</p>
+        <div class="w3-row">
+          <div class="w3-quarter w3-purple" style="height: 100px;"></div>
+          <div class="w3-quarter w3-pink" style="height: 100px;"></div>
+          <div class="w3-quarter w3-orange" style="height: 100px;"></div>
+          <div class="w3-quarter w3-yellow" style="height: 100px;"></div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-quarter w3-green" style="height: 100px;"></div>
+          <div class="w3-quarter w3-teal" style="height: 100px;"></div>
+          <div class="w3-quarter w3-cyan" style="height: 100px;"></div>
+          <div class="w3-quarter w3-lime" style="height: 100px;"></div>
+        </div>
+        
+        <h3 class="w3-margin-top">W3 CSS Colors</h3>
+        <p>The <a href="https://www.w3schools.com/w3css/w3css_colors.asp"><b>w3-container</b></a> classes are inspired by modern colors used in marketing, road signs, and sticky notes:</p>
+        <ul class="">
+          <li>Common margins</li>
+          <li>Common paddings</li>
+          <li>Common vertical alignments</li>
+          <li>Common horizontal alignments</li>
+          <li>Common fonts</li>
+          <li>Common colors</li>
+        </ul>
+        <p>The w3-container class is typically used with HTML container elements, like:</p>
+        <p>&lt;div&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;blockquote&gt;, &lt;form&gt;, and 
+          more.</p>
+        <div class="w3-container w3-dark-grey"><h1>This is a Header</h1></div>
+        <div class="w3-container w3-light-grey"><p class="w3-text-brown">This article is light grey and the text is brown. This article is light grey and the text is brown. This article is light grey and the text is brown. This article is light grey and the text is brown. This article is light grey and the text is brown.</p></div>
+        <div class="w3-container w3-dark-grey"><p class="w3-text-light-gray">This is a footer.</p></div>
+      </div>
+    </div>
   </body>
 </html>
