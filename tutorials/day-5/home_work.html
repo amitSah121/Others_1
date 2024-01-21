@@ -4,10 +4,38 @@
     <title>Base</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../w3.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="../w3.js"></script>
   </head>
   <body>
-    
+    <div id="id04">
+      <p class={{class}}>Hello</p>
+        {{lastName}} {{plt}}
+      <p w3-repeat="customer">{{x}} {{y}}</p>
+    </div>
+
+    <div id="id05">
+      <p class={{class}}>Hello</p>
+        {{lastName}} {{plt}}
+      <p w3-repeat="customer">{{x}} {{y}}</p>
+    </div>
+
+    <script>
+      // var myObject = {"class" : "w3-red", "lastName" : "Doe","plt":"Next"};
+      // w3.displayObject("id04", myObject);
+
+      var my1 = {customer:[
+        {x:1,y:2},
+        {x:3,y:4},
+      ],
+      "class" : "w3-red", "lastName" : "Doe","plt":"Next"
+      }
+      w3.displayObject("id04", my1);
+      
+      w3.displayObject("id05", my1);
+    </script>
   </body>
 </html>
