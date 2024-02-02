@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../w3.js"></script>
+  </head>
+  <body>
+    
+    <script>
+      let token2 = "ae58abc3fc91020e958e47e69d23d558ed91ebb833debe75407213a0bf0706a080a3b984d6550b3b977c7debffe103330799d597769baff17cab245ae7037129252177eecfede062be931a6d3d9ba64231de302c79d8e6a0b697b3cd20819826232f62d443004c83a965d070bcec06d3fd04f0af4399c426646c824106250350";
+
+        let token = "06e1c163f829877d51e4134d38a2c05266a0d6f9d15d50e3bec7a4d2242a7bddc05bb291c743dc7d8854e05eece13856bca49108161451da440dd94d4e8e2f0a4896ec3f8e5c98ff14921c7a63c79ab61f0441b5a57915233c552bef511151b0dc55daa6fc2272c747f96b8fdc4030f0d12f314bdd0ed465ada24f1972da1ab5";
+        async function logMovies() {
+            const response = await fetch("http://localhost:1337/api/tests/1",{
+                headers:{
+                    'Authorization': 'Bearer '+ token,
+                }
+            });
+            const movies = await response.json();
+            console.log(movies);
+        }
+        logMovies();
+    </script>
+  </body>
+</html>
