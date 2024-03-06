@@ -1,0 +1,70 @@
+
+<HomeScreen>:
+    BoxLayout:
+    	canvas.before:
+	        Color:
+	            rgb: white
+	        Rectangle:
+	            pos: self.pos  
+	            size: self.size
+    	orientation: "vertical"
+    	StackLayout:
+    		size_hint_y: None
+			height: self.minimum_height
+			bg_color: 1,1,1	
+		    canvas.before:
+		        Color:
+		            rgb: blue_3
+		        Rectangle:
+		            pos: self.pos  
+		            size: self.size
+    		padding: 10,10,10,10
+    		bg_color: blue_3
+	        Nav1Button:
+	        	text: "Home"
+	        Nav1Button:
+	        	text: "Setup"
+	        	bg_color: blue_3
+	        	color: white
+	        	on_press: root.manager.current = 'setup'
+	        Nav1Button:
+	        	text: "Analysis"
+	        	bg_color: blue_3
+	        	color: white
+	        	on_press: root.manager.current = 'analysis'
+
+        StackLayout:
+    		size_hint_y: None
+			height: self.minimum_height
+			bg_color: 1,1,1	
+		    canvas.before:
+		        Color:
+		            rgb: blue_4
+		        Rectangle:
+		            pos: self.pos  
+		            size: self.size
+    		padding: 5,5,5,5
+    		bg_color: blue_4
+	        Nav2Button:
+	        	text: "New Table"
+	        	bg_color: blue_4
+	        	color: white
+	        	on_press: root.print_()
+	        Nav2Button:
+	        	text: "Open File"
+	        	bg_color: blue_4
+	        	color: white
+	        	on_press: root.get_file()
+	        Nav2Button:
+	        	text: "Settings"
+	        	bg_color: blue_4
+	        	color: white
+	    BoxLayout:
+	    	ScrollView:
+	    		BoxLayout:
+			    	orientation: "vertical"
+			    	id: tables_info
+			    	size_hint_y: None
+			    	height: self.minimum_height
+
+

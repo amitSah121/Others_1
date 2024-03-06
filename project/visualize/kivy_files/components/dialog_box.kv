@@ -1,0 +1,119 @@
+
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserListView:
+            id: filechooser
+
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+
+            Button:
+                text: "Load"
+                on_release: root.load(filechooser.path, filechooser.selection)
+
+
+<MenuBarSheet>:
+    orientation:"horizontal"
+    size_hint: 1,None
+    height: self.minimum_height
+    BoxLayout:
+        orientation:"horizontal"
+        size_hint: 1,None
+        height: self.minimum_height
+        canvas.before:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle:
+                pos: self.pos  
+                size: self.size
+        Label:
+            text: "Edit Cell"
+            id: label
+            size_hint: None,None
+            size: self.texture_size
+            color: black
+
+
+        TextInput:
+            id: inp
+            text: "..."
+            size_hint: None,None
+            height: 30
+            width: 300
+            on_text_validate: root.set_text(self.text)
+
+        Button:
+            text: "Save"
+            id: save
+            on_press: root.save()
+
+<TextInputForSheet>:
+    text: ""
+    size_hint: None,None
+    size: self.texture_size
+    padding: 10,10,10,10
+    background_normal: ""
+    background_color: white
+    color: black
+    font_size: self.font_size
+    on_press: self.call_on_press()
+
+
+
+<SpreadSheetDialogBox>:
+    viewclass: 'TextInputForSheet'
+    bar_width: 10
+    RecycleGridLayout:
+        canvas.before:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle:
+                pos: self.pos  
+                size: self.size
+        cols:root.cols
+        size_hint: None,None
+        height: self.minimum_height
+        width: self.minimum_width
+
+
+<TableSelectionDialogBox>:
+    orientation: "vertical"
+    canvas.before:
+        Color:
+            rgba: white
+        Rectangle:
+            pos: self.pos  
+            size: self.size
+    StackLayout:
+        size_hint_y: None
+        height: "60px"
+        padding: 10,10,10,10
+        canvas.before:
+            Color:
+                rgba: blue_1
+            Rectangle:
+                pos: self.pos  
+                size: self.size
+        Nav2Button:
+            text: "Cancel"
+            bg_color: blue_2
+            on_press: root.cancel()
+
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: white
+            Rectangle:
+                pos: self.pos  
+                size: self.size
+        id: list
+
+

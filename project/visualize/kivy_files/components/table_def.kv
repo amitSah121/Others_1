@@ -1,0 +1,51 @@
+<TableDef>:
+	padding: 10,10,10,10
+	orientation: "vertical"
+	size_hint_y: None
+	height: self.minimum_height
+
+	StackLayout:
+		size_hint_y: None
+		height: "60"
+		bg_color: 1,1,1	
+	    canvas.before:
+	        Color:
+	            rgb: grey_3
+	        Rectangle:
+	            pos: self.pos  
+	            size: self.size
+		padding: 10,10,10,10
+		spacing: 10
+		Button:
+			background_normal: root.caret_
+			size_hint: None,None
+			size: "35px","35px"
+			on_press: root.toggle()
+		Button:
+			background_normal: root.edit
+			size_hint: None,None
+			size: "35px","35px"
+			on_press: root.open_sheet()
+		Label:
+			text: root.text
+			id: name
+			size_hint_x: None
+			width: self.texture_size[0]
+	BoxLayout:
+		size_hint_y: None
+		height: self.minimum_height
+
+		canvas.before:
+	        Color:
+	            rgb: grey_1
+	        Rectangle:
+	            pos: self.pos  
+	            size: self.size
+
+		Label:
+			text: root.description
+			size_hint_y: None
+			padding: 10,10,10,10
+			id: desc
+			height: self.texture_size[1]
+			color: black

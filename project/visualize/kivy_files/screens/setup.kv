@@ -1,0 +1,35 @@
+
+<SetupScreen>:
+    BoxLayout:
+    	orientation: "vertical"
+    	canvas.before:
+	        Color:
+	            rgb: white
+	        Rectangle:
+	            pos: self.pos  
+	            size: self.size
+    	StackLayout:
+    		padding: 10,10,10,10
+    		size_hint_y: None
+			height: self.minimum_height
+			bg_color: 1,1,1	
+		    canvas.before:
+		        Color:
+		            rgb: blue_3
+		        Rectangle:
+		            pos: self.pos  
+		            size: self.size
+    		bg_color: blue_3
+	        Nav1Button:
+	        	text: "Home"
+	        	bg_color: blue_3
+	        	color: white
+	        	on_press: root.manager.current = 'home'
+	        Nav1Button:
+	        	text: "Setup"
+	        Nav1Button:
+	        	text: "Analysis"
+	        	bg_color: blue_3
+	        	color: white
+	        	on_press: root.manager.current = 'analysis'
+	    BoxLayout:
