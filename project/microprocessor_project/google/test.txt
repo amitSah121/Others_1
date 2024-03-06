@@ -1,0 +1,4 @@
+rc_key = 6Ld_vXEmAAAAAIA2XUTDFR3ejgiYsUsP4I2T1bxS
+rec_secrete_key = 6Ld_vXEmAAAAAEgtKnVqV1A5kg4IFaX8eN3Q4qvp
+
+apikey = AIzaSyC3GCynyh29OLn9JdxobTccGqAna7Z5Gss
